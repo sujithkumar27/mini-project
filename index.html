@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>DIABETES</title>
+        <link rel="stylesheet" type="text/css" href="style.css"> 
+    </head>
+
+    <body>
+        <header>
+            <a href="#" class="logo">DIABETES</a>
+            <div class="group">
+                <ul class="navigation">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Streak</a></li>
+                </ul>
+                
+                <div class="search">
+                    <span class="icon">
+                        <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                        <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+
+                    </span>
+                </div>  
+                <ion-icon name="menu-outline" class="menu"></ion-icon>
+            </div>  
+            <div class="searchbox">
+                <input type="text" placeholder="search">
+            </div> 
+            <ol>
+                <li>
+                    <li><a href="#" class="button">SignUp</a></li>
+                </li>
+            </ol>   
+        </header>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            let searchBtn = document.querySelector('.searchBtn');
+            let closeBtn = document.querySelector('.closeBtn');
+            let searchbox = document.querySelector('.searchbox');
+            let navigation = document.querySelector('.navigation');
+            let menu = document.querySelector('.menu');
+            let header = document.querySelector('header');
+            searchBtn.onclick = function(){
+                searchbox.classList.add('active');
+                closeBtn.classList.add('active');
+                searchBtn.classList.add('active');
+                menu.classList.add('hide');
+            }
+            closeBtn.onclick = function(){
+                searchbox.classList.remove('active');
+                closeBtn.classList.remove('active');
+                searchBtn.classList.remove('active');
+                menu.classList.remove('hide');
+            }
+            menu.onclick = function(){
+                header.classList.toggle('open');
+                searchbox.classList.remove('active');
+                closeBtn.classList.remove('active');
+                searchBtn.classList.remove('active');
+            }
+        </script>
+        <section class="home" id="home">
+            <div class="image">
+                <img src="mini.png" >
+            </div>
+
+            <div class="content">
+                <h3 style="color:white;"> Diabetes is not curable.</h3>
+                <h4 style="color:white;"> its sustainable</h4>
+            </div>
+
+            <div class="newcont">
+                <h1 style="color:white;">OVERVIEW</h1>
+                <br>
+                <h4 >Diabetes is a chronic disease that occurs either when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces. Insulin is a hormone that regulates blood glucose. Hyperglycaemia, also called raised blood glucose or raised blood sugar, is a common effect of uncontrolled diabetes and over time leads to serious damage to many of the body's systems, especially the nerves and blood vessels.</h3>
+                <br>
+                <br>
+                <h4 >In 2014, 8.5% of adults aged 18 years and older had diabetes. In 2019, diabetes was the direct cause of 1.5 million deaths and 48% of all deaths due to diabetes occurred before the age of 70 years. Another 460 000 kidney disease deaths were caused by diabetes, and raised blood glucose causes around 20% of cardiovascular deaths (1).</h4>
+                <br>
+                <br>
+                <h1 style="color:white;">TYPE 1</h1>
+                <br>
+                <h4  >Type 1 diabetes (previously known as insulin-dependent, juvenile or childhood-onset) is characterized by deficient insulin production and requires daily administration of insulin. In 2017 there were 9 million people with type 1 diabetes; the majority of them live in high-income countries. Neither its cause nor the means to prevent it are known.</h4>
+                <br>
+                <br>
+                <h1 style="color:white;">TYPE 2</h1>
+                <br>
+                <h4>
+                    <ul>
+                        <li>Type 2 diabetes affects how your body uses sugar (glucose) for energy. It stops the body from using insulin properly, which can lead to high levels of blood sugar if not treated.</li>
+                        <li>Type 2 diabetes is often preventable. Factors that contribute to developing type 2 diabetes include being overweight, not getting enough exercise, and genetics.</li>
+                        <li>Symptoms of type 2 diabetes can be mild. They may take several years to be noticed.  Symptoms may be similar to those of type 1 diabetes but are often less marked. As a result, the disease may be diagnosed several years after onset, after complications have already arisen.</li>
+                    </ul>
+                </h4>
+
+
+            </div>
+        </section>
+
+ 
+
+    </body>
+</html> 
